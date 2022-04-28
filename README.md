@@ -18,3 +18,21 @@ docker stats
 ```
 docker image
 ```
+
+## get latest image
+```
+docker run --name mongo -d mongo
+```
+
+## pull docker image 
+```
+docker pull redis
+```
+
+## docker container command
+```
+docker stop [CONTAINER]
+docker start [CONTAINER]
+docker restart [CONTAINER]
+```
+
