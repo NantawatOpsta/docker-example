@@ -123,3 +123,9 @@ chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 
 docker compose version
 ```
+
+## dockerhub
+```
+docker login
+docker push <image>:<tag>
+```
