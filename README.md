@@ -36,3 +36,44 @@ docker start [CONTAINER]
 docker restart [CONTAINER]
 ```
 
+## get pod active and deactivate container
+```
+docker ps -a
+```
+
+## docker build image
+```
+docker build -t <tag name> .
+```
+
+## docker expose port
+```
+docker run -p 8000:8000 <image>
+```
+
+## docker network
+```
+docker network ls
+```
+
+## docker create network
+```
+docker network create mongo
+```
+
+## create mongo and mongo express service
+```
+docker run --name mongo -d mongo
+
+docker run -it --rm \
+    --network web_default \
+    --name mongo-express \
+    -p 8081:8081 \
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+    -e ME_CONFIG_MONGODB_SERVER="web_db_1" \
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \
+    mongo-express
+```
+
+
