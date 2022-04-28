@@ -129,3 +129,9 @@ docker compose version
 docker login
 docker push <image>:<tag>
 ```
+
+
+## try laravel
+```
+curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
+```
