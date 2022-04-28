@@ -104,4 +104,11 @@ docker run --name mongo --network mongo -d \
     mongo
 ```
 
+## docker container debug command 
+```
+docker exec -it <container name> bash
+docker attach <container name>
+docker logs <container name>
+```
+
 
