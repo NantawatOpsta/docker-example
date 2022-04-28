@@ -133,5 +133,7 @@ docker push <image>:<tag>
 
 ## try laravel
 ```
+sudo apt update 
+sudo apt install vim
 curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
 ```
