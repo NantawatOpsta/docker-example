@@ -31,9 +31,10 @@ docker pull redis
 
 ## docker container command
 ```
-docker stop [CONTAINER]
-docker start [CONTAINER]
-docker restart [CONTAINER]
+docker stop <container name>
+docker start <container name>
+docker restart <container name>
+docker rm -f <container name>
 ```
 
 ## get pod active and deactivate container
@@ -72,10 +73,10 @@ docker network create mongo
 
 ## create mongo and mongo express service
 ```
-docker run --name mongo -d mongo
+docker run --name mongo --network mongo -d mongo
 
-docker run -it --rm \
-    --network web_default \
+docker run -d \
+    --network mongo \
     --name mongo-express \
     -p 8081:8081 \
     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
