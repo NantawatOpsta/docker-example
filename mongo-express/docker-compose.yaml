@@ -4,7 +4,7 @@ services:
     container_name: mongo
     image: mongo:latest
     volumes:
-      - mongovolume:/data/db
+      - mongodata:/data/db
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root 
       - MONGO_INITDB_ROOT_PASSWORD=root
@@ -23,4 +23,5 @@ services:
       - mongo
 
 volumes:
-  mongovolume: {}
+  mongodata: 
+    driver: local
