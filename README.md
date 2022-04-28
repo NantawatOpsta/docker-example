@@ -51,6 +51,13 @@ docker build -t <tag name> .
 docker run -p 8000:8000 <image>
 ```
 
+## docker container command 
+```
+docker exec -it <container name> bash
+docker attach <container name>
+docker logs <container name>
+```
+
 ## docker network
 ```
 docker network ls
