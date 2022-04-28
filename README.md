@@ -50,7 +50,7 @@ docker build -t <tag name> .
 ```
 docker run -p 8000:8000 <image>
 
-#exaple: docker run -d -p 8000:8000 --name php myphp
+# docker run -d -p 8000:8000 --name php myphp
 ```
 
 ## docker container command 
