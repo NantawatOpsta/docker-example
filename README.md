@@ -90,4 +90,18 @@ docker run -d \
     mongo-express
 ```
 
+## delete mongodb server
+```
+docker rm -f mongo
+```
+
+## docker persist data mongodb
+```
+docker run --name mongo --network mongo -d \
+    -v $(pwd)/mongostorage:/data/db \
+    -e MONGO_INITDB_ROOT_USERNAME="root" \
+    -e MONGO_INITDB_ROOT_PASSWORD="root" \
+    mongo
+```
+
 
