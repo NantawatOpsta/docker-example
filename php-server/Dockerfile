@@ -1,4 +1,4 @@
-ROM php:7.4-fpm
+FROM php:7.4-fpm
 
 #RUN apt update
 #RUN apt install -y vim
