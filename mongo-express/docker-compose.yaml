@@ -1,6 +1,6 @@
 version: "3.9"  # optional since v1.27.0
 services:
-  mongo:
+  mongodb:
     container_name: mongo
     image: mongo:latest
     volumes:
@@ -20,7 +20,7 @@ services:
     ports:
       - 8081:8081
     depends_on:
-      - mongo
+      - mongodb
 
 volumes:
   mongodata: 
